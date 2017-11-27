@@ -20,7 +20,7 @@ RWTApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loca
             if (user != null) {
                 activeUser.login(user);
                 $uibModalInstance.close("Logged-in");
-                $location.path("/syllables")
+                $location.path("/words")
             } else {
                 $scope.failedAttempt = true;
             }

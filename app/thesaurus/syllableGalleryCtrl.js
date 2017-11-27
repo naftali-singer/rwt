@@ -1,4 +1,4 @@
-RWTApp.controller("SyllableGalleryCtrl", function ($scope, $http, $location, activeUser, Syllable, syllables) {
+RWTApp.controller("SyllableGalleryCtrl", function ($scope, $http, $location, activeUser, syllables, Syllable) {
     
         // If the user is not logged in going back to home screen
         if (!activeUser.isLoggedIn()) {
