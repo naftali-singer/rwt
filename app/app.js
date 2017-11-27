@@ -11,8 +11,8 @@ RWTApp.config(function ($routeProvider) {
             controller: "WordGalleryCtrl"
         })
         .when("/syllables", {
-//            templateUrl: "app/recipe/recipeGallery.html",
-//            controller: "RecipeGalleryCtrl"
+            templateUrl: "app/thesaurus/syllableGallery.html",
+            controller: "SyllableGalleryCtrl"
         })
         .when("/letters", {
 //            templateUrl: "app/recipe/recipeGallery.html",

@@ -1,0 +1,20 @@
+[
+    {   "symbol" : "ba",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "na",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "a",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "vo",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "ca",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "do",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "ma",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "n",
+        "soundUrl" : "app/data/email.mp3" },
+    {   "symbol" : "go",
+        "soundUrl" : "app/data/email.mp3" }
+]
