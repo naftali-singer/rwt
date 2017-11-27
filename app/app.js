@@ -7,8 +7,8 @@ RWTApp.config(function ($routeProvider) {
             controller: "HomeCtrl"
         })
         .when("/words", {
-//            templateUrl: "app/recipe/recipeGallery.html",
-//            controller: "RecipeGalleryCtrl"
+            templateUrl: "app/thesaurus/wordGallery.html",
+            controller: "WordGalleryCtrl"
         })
         .when("/syllables", {
 //            templateUrl: "app/recipe/recipeGallery.html",

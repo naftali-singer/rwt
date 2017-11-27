@@ -1,0 +1,23 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Thesaurus Words</h1>
+    </div>
+
+    
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="word in wordArr" >
+        
+        <div class="well word-item" ng-click="openDetails($index)">
+            
+            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">
+            <h3>{{word.symbol}}</h3>
+            <p>{{word.soundUrl}}</p>
+            <button ng-click="playWord(word.soundUrl)">Play Word</button>
+
+        </div>
+        
+    </div>
+    
+    
+</div>
