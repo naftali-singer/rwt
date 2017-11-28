@@ -38,3 +38,7 @@
 .answersheet-item {
     cursor: pointer;
 }
+
+.large-gliphicon {
+    font-size: 200%;
+}

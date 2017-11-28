@@ -6,8 +6,10 @@
     </div>
     
     <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ng-repeat="syllable in syllableArr" >      
-        <div class="well syllable-item" ng-click="playSyllable(syllable.soundUrl)">            
-            <h2>{{syllable.symbol}}</h2>
+        <div class="well syllable-item" ng-click="$scope.verifiedSyllable = verifySyllable($index, syllableSymbol)">            
+            <h2 ng-show="$scope.verifiedSyllable">{{syllable.symbol}}</h2>
+            <button type="submit" ng-hide="$scope.verifiedSyllable" ng-click="playSyllable(syllable.soundUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
+            <input type="text" ng-hide="$scope.verifiedSyllable" size="6" ng-model="syllableSymbol">
         </div>   
     </div>
     
