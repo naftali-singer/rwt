@@ -5,18 +5,10 @@
       <h1>Thesaurus Letters</h1>
     </div>
 
-    
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="letter in letterArr" >
-        
-        <div class="well letter-item" ng-click="openDetails($index)">
-            
-            <h3>{{letter.symbol}}</h3>
-            <p>{{letter.nameUrl}}</p>
-            <button ng-click="playLetter(letter.nameUrl)">Play Letter</button>
-
+    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ng-repeat="letter in letterArr" >
+        <div class="well letter-item" ng-click="playLetter(letter.nameUrl)">           
+            <h2>{{letter.symbol}}</h2>
         </div>
-        
-    </div>
-    
+    </div>    
     
 </div>

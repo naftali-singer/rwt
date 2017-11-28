@@ -4,19 +4,11 @@
     <div class="page-header">
       <h1>Thesaurus Syllables</h1>
     </div>
-
     
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="syllable in syllableArr" >
-        
-        <div class="well syllable-item" ng-click="openDetails($index)">
-            
-            <h3>{{syllable.symbol}}</h3>
-            <p>{{syllable.soundUrl}}</p>
-            <button ng-click="playSyllable(syllable.soundUrl)">Play Syllable</button>
-
-        </div>
-        
+    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ng-repeat="syllable in syllableArr" >      
+        <div class="well syllable-item" ng-click="playSyllable(syllable.soundUrl)">            
+            <h2>{{syllable.symbol}}</h2>
+        </div>   
     </div>
-    
     
 </div>
