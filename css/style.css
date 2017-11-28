@@ -23,10 +23,18 @@
     cursor: pointer;
 }
 
+.quiz-header h4 {
+    display: inline;
+    text-decoration: underline;
+}
+
 .quiz-item {
     cursor: pointer;
 }
 
+.quiz-item h4 {
+    display: inline;
+}
 .answersheet-item {
     cursor: pointer;
 }

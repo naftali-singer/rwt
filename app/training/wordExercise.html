@@ -1,0 +1,51 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Exercise Words</h1>
+    </div>
+
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="word in wordArr" >
+        
+        <div class="well word-item" ng-click="openDetails($index)">
+            
+            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">
+            <br>
+            <form class="form-horizontal">
+                <div class="form-group">
+<!--                    <label class="control-label col-sm-2" for="wordSymbol">Word:</label> -->
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="wordSymbol" ng-model="wordSymbol">
+                    </div>
+                </div>
+                <div class="form-group">
+<!--                    <label class="control-label col-sm-2" for="syllableSymbols">Syllables:</label>   -->
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="syllableSymbols" ng-model="syllableSymbol1">
+                        <input type="text" class="form-control" id="syllableSymbols" ng-model="syllableSymbol2">
+                        <input type="text" class="form-control" id="syllableSymbols" ng-model="syllableSymbol3">
+                        <input type="text" class="form-control" id="syllableSymbols" ng-model="syllableSymbol4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="summit" class="btn btn-default pull-right" ng-click="verifyWord($index, $scope.wordSymbol)">?</button>
+                    </div>
+                </div>
+            </form>
+            <span ng-hide="verifyWord($index, wordSymbol)" class="glyphicon glyphicon-ok"></span>
+
+
+
+
+            <h2>{{word.symbol}}</h2>
+            <p>{{word.soundUrl}}</p>
+            <button ng-click="playWord(word.soundUrl)">Play Word</button>
+
+        </div>
+        
+    </div>
+    
+    
+</div>

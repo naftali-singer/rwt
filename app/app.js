@@ -18,6 +18,14 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/thesaurus/letterGallery.html",
             controller: "LetterGalleryCtrl"
         })
+        .when("/wordexercises", {
+            templateUrl: "app/training/wordExercise.html",
+            controller: "WordExerciseCtrl"
+        })
+        .when("/syllableexercises", {
+            templateUrl: "app/training/syllableExercise.html",
+            controller: "SyllableExerciseCtrl"
+        })
         .when("/quizzes", {
             templateUrl: "app/training/quizGallery.html",
             controller: "QuizGalleryCtrl"
