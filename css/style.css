@@ -22,3 +22,7 @@
 .letter-item {
     cursor: pointer;
 }
+
+.quiz-item {
+    cursor: pointer;
+}

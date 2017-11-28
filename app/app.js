@@ -19,8 +19,8 @@ RWTApp.config(function ($routeProvider) {
             controller: "LetterGalleryCtrl"
         })
         .when("/quizzes", {
-//            templateUrl: "app/recipe/recipeGallery.html",
-//            controller: "RecipeGalleryCtrl"
+            templateUrl: "app/training/quizGallery.html",
+            controller: "QuizGalleryCtrl"
         })
         .when("/progress", {
 //            templateUrl: "app/recipe/recipeGallery.html",

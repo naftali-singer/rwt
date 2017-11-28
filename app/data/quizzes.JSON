@@ -1,0 +1,37 @@
+[
+    {
+        "quizId": 1,
+        "title": "grade c beginners",
+        "exposed": true
+    },
+    {
+        "quizId": 2,
+        "title": "grade c mid-term",
+        "exposed": true
+    },
+    {
+        "quizId": 3,
+        "title": "grade c final",
+        "exposed": true
+    },
+    {
+        "quizId": 4,
+        "title": "grade d beginners",
+        "exposed": true
+    },
+    {
+        "quizId": 5,
+        "title": "grade d mid-term",
+        "exposed": true
+    },
+    {
+        "quizId": 6,
+        "title": "grade d final",
+        "exposed": true
+    },
+    {
+        "quizId": 7,
+        "title": "knowledge level evaluation",
+        "exposed": true
+    }
+]

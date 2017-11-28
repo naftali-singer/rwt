@@ -1,0 +1,24 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Training Quizzes</h1>
+    </div>
+
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="quiz in quizArr" >
+        
+        <div class="well quiz-item" ng-click="openDetails($index)">
+            
+<!--            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">   -->
+            <h2>{{quiz.quizId}}</h2>
+            <p>{{quiz.title}}</p>
+            <p>{{quiz.exposed}}</p>
+<!--             <button ng-click="playWord(word.soundUrl)">Play Word</button>   -->
+
+        </div>
+        
+    </div>
+    
+    
+</div>
