@@ -18,3 +18,7 @@
 .syllable-item {
     cursor: pointer;
 }
+
+.letter-item {
+    cursor: pointer;
+}
