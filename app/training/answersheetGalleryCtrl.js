@@ -1,4 +1,4 @@
-RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeUser, Quiz, quizzes) {
+RWTApp.controller("AnswersheetGalleryCtrl", function ($scope, $http, $location, activeUser, Answersheet, answersheets) {
     
         // If the user is not logged in going back to home screen
         if (!activeUser.isLoggedIn()) {
@@ -9,15 +9,15 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
 //        $scope.greetName = activeUser.get().firstName;
     
         // Making sure that we are only loading once
-        if (quizzes.getAll().length === 0) {
-            $scope.quizArr = [];
-            $http.get("app/data/quizzes.json").then(function(response) {
+        if (answersheets.getAll().length === 0) {
+            $scope.answersheetArr = [];
+            $http.get("app/data/answersheets.json").then(function(response) {
                 alert(JSON.stringify(response));
-                quizzes.load(response.data);
-                $scope.quizArr = quizzes.getAll();
+                answersheets.load(response.data);
+                $scope.answersheetArr = answersheets.getAll();
             });
         } else {
-            $scope.quizArr = quizzes.getAll();
+            $scope.answersheetArr = answersheets.getAll();
         }
     
 //        $scope.openDetails = function(index) {

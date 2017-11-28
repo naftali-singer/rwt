@@ -1,0 +1,56 @@
+[
+    {
+        "userId": 1,
+        "quizId": 1,
+        "ordinal": 1,
+        "score": 67
+    },
+    {
+        "userId": 1,
+        "quizId": 1,
+        "ordinal": 2,
+        "score": 97
+    },
+    {
+        "userId": 1,
+        "quizId": 2,
+        "ordinal": 1,
+        "score": 85
+    },
+    {
+        "userId": 1,
+        "quizId": 3,
+        "ordinal": 1,
+        "score": 72
+    },
+    {
+        "userId": 1,
+        "quizId": 3,
+        "ordinal": 2,
+        "score": 88
+    },
+    {
+        "userId": 2,
+        "quizId": 1,
+        "ordinal": 1,
+        "score": 92
+    },
+    {
+        "userId": 2,
+        "quizId": 2,
+        "ordinal": 1,
+        "score": 89
+    },
+    {
+        "userId": 2,
+        "quizId": 3,
+        "ordinal": 1,
+        "score": 94
+    },
+    {
+        "userId": 3,
+        "quizId": 1,
+        "ordinal": 1,
+        "score": 70
+    }
+]
