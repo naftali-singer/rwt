@@ -3,6 +3,10 @@ RWTApp.factory("Quiz", function(){
     function Quiz(plainObject) {
         this.quizId = plainObject.quizId;
         this.title = plainObject.title;
+        this.skill = plainObject.skill;
+        this.category = plainObject.category;
+        this.means = plainObject.means;
+        this.quizItem = plainObject.quizItem;
         this.exposed = plainObject.exposed;
     };
 

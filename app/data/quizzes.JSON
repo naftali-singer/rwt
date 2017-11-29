@@ -1,37 +1,65 @@
 [
     {
-        "quizId": 1,
-        "title": "grade c beginners",
+        "quizId": 101,
+        "title": "grade c quarter-term",
+        "skill" : "writing",
+        "category" : "letter",
+        "means" : "sound",
+        "quizItem" : "Aa",
         "exposed": true
     },
     {
-        "quizId": 2,
+        "quizId": 102,
         "title": "grade c mid-term",
+        "skill" : "writing",
+        "category" : "word",
+        "means" : "sound",
+        "quizItem" : "banana",
         "exposed": true
     },
     {
-        "quizId": 3,
-        "title": "grade c final",
+        "quizId": 103,
+        "title": "grade c term final",
+        "skill" : "writing",
+        "category" : "word",
+        "means" : "image",
+        "quizItem" : "banana",
         "exposed": true
     },
     {
-        "quizId": 4,
-        "title": "grade d beginners",
+        "quizId": 104,
+        "title": "grade d quarter-term",
+        "skill" : "reading",
+        "category" : "letter",
+        "means" : "sound",
+        "quizItem" : "Aa",
         "exposed": true
     },
     {
-        "quizId": 5,
+        "quizId": 105,
         "title": "grade d mid-term",
+        "skill" : "reading",
+        "category" : "word",
+        "means" : "sound",
+        "quizItem" : "banana",
         "exposed": true
     },
     {
-        "quizId": 6,
-        "title": "grade d final",
+        "quizId": 106,
+        "title": "grade d term final",
+        "skill" : "reading",
+        "category" : "word",
+        "means" : "image",
+        "quizItem" : "banana",
         "exposed": true
     },
     {
-        "quizId": 7,
+        "quizId": 107,
         "title": "knowledge level evaluation",
+        "skill" : "reading",
+        "category" : "word",
+        "means" : "image",
+        "quizItem" : "avocado",
         "exposed": true
     }
 ]

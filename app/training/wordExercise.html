@@ -10,7 +10,7 @@
 <!--            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image"> -->
             <h2 ng-show="$scope.verifiedWord">{{word.symbol}}</h2>
             <button type="submit" ng-hide="$scope.verifiedWord" ng-click="playWord(word.soundUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
-            <input type="text" ng-hide="$scope.verifiedWord" size="18" ng-model="wordSymbol">
+            <input type="text" ng-hide="$scope.verifiedWord" size="12" ng-model="wordSymbol">
         </div>
     </div>
 

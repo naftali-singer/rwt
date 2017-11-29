@@ -17,9 +17,13 @@
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="quiz in quizArr" >
         
-        <div class="well quiz-item" ng-click="openDetails($index)">
+        <div class="well quiz-item" ng-click="dispQuizView($index)">
             <h4>{{quiz.quizId}}</h4>
             <h4>{{quiz.title}}</h4>
+            <h4>{{quiz.skill}}</h4>
+            <h4>{{quiz.category}}</h4>
+            <h4>{{quiz.means}}</h4>
+            <h4>{{quiz.quizItem}}</h4>
             <h4>{{quiz.exposed}}</h4>
         </div>
         

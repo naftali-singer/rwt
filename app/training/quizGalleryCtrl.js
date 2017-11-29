@@ -20,9 +20,9 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
             $scope.quizArr = quizzes.getAll();
         }
     
-//        $scope.openDetails = function(index) {
-//            $location.path("/recipes/" + index)
-//        }
+        $scope.dispQuizView = function(index) {
+            $location.path("/quizzes/" + index)
+        }
 
 //        $scope.playWord = function (soundUrl) {
 //            var audio = new Audio(soundUrl);
