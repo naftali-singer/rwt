@@ -1,9 +1,38 @@
 [
     {
-        "email":"nir@nir.com",
-        "password": "nir123",
-        "firstName":"Nir",
-        "lastName": "Channes",
-        "data":"app/data/nir-recipes.json"
+        "userId" : "10",
+        "userPswd" : "90",
+        "firstName" : "Nir",
+        "lastName" : "Channes",
+        "role" : "teacher",
+        "teacherId" : "00",
+        "quizId" : 0
+    },
+    {
+        "userId" : "11",
+        "userPswd" : "89",
+        "firstName" : "Naftali",
+        "lastName" : "Singer",
+        "role" : "pupil",
+        "teacherId" : "10",
+        "quizId" : 104
+    },
+    {
+        "userId" : "12",
+        "userPswd" : "88",
+        "firstName" : "John",
+        "lastName" : "Dow",
+        "role" : "pupil",
+        "teacherId" : "10",
+        "quizId" : 0
+    },
+    {
+        "userId" : "13",
+        "userPswd" : "87",
+        "firstName" : "Jane",
+        "lastName" : "Dow",
+        "role" : "pupil",
+        "teacherId" : "10",
+        "quizId" : 102
     }
 ]

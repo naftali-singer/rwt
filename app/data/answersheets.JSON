@@ -1,56 +1,65 @@
 [
     {
-        "userId": 1,
-        "quizId": 1,
+        "userId": 11,
+        "quizId": 101,
         "ordinal": 1,
-        "score": 67
+        "score": 67,
+        "answer" : "Bb"
     },
     {
-        "userId": 1,
-        "quizId": 1,
+        "userId": 11,
+        "quizId": 101,
         "ordinal": 2,
-        "score": 97
+        "score": 97,
+        "answer" : "Aa"
     },
     {
-        "userId": 1,
-        "quizId": 2,
+        "userId": 11,
+        "quizId": 102,
         "ordinal": 1,
-        "score": 85
+        "score": 85,
+        "answer" : "banana"
     },
     {
-        "userId": 1,
-        "quizId": 3,
+        "userId": 11,
+        "quizId": 103,
         "ordinal": 1,
-        "score": 72
+        "score": 72,
+        "answer" : "mango"
     },
     {
-        "userId": 1,
-        "quizId": 3,
+        "userId": 11,
+        "quizId": 103,
         "ordinal": 2,
-        "score": 88
+        "score": 88,
+        "answer" : "banana"
     },
     {
-        "userId": 2,
-        "quizId": 1,
+        "userId": 12,
+        "quizId": 101,
         "ordinal": 1,
-        "score": 92
+        "score": 92,
+        "answer" : "Aa"
     },
     {
-        "userId": 2,
-        "quizId": 2,
+        "userId": 12,
+        "quizId": 102,
         "ordinal": 1,
-        "score": 89
+        "score": 89,
+        "answer" : "banana"
     },
     {
-        "userId": 2,
-        "quizId": 3,
+        "userId": 12,
+        "quizId": 103,
         "ordinal": 1,
-        "score": 94
+        "score": 94,
+        "answer" : "banana"
     },
     {
-        "userId": 3,
-        "quizId": 1,
+        "userId": 13,
+        "quizId": 101,
         "ordinal": 1,
-        "score": 70
+        "score": 70,
+        "answer" : "Aa"
     }
 ]

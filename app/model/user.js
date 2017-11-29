@@ -1,11 +1,14 @@
 // Shared User Constructor
 RWTApp.factory("User", function(){
     function User(plainObject) {
-        this.email = plainObject.email;
-        this.password = plainObject.password;
+        this.userId = plainObject.userId;
+        this.userPswd = plainObject.userPswd;
         this.firstName = plainObject.firstName;
         this.lastName = plainObject.lastName;
-        this.data = plainObject.data;
+        this.role = plainObject.role;
+        this.teacherId = plainObject.teacherId;
+        this.quizId = plainObject.quizId;
+        
     };
 
     return User;
@@ -32,9 +35,9 @@ RWTApp.factory("activeUser", function(User){
     };
 
     return {
-        isLoggedIn: isLoggedIn,
-        login: login,
-        logout: logout,
-        get: get
-    };   
+        isLoggedIn : isLoggedIn,
+        login : login,
+        logout : logout,
+        get : get
+    };
 });

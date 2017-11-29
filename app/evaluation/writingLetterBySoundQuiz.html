@@ -1,0 +1,36 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Writing Letter by Sound Quiz</h1>
+    </div>
+
+    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ng-repeat="quizItem in quizItemArr" >
+        <div class="well letter-item">
+            <button type="submit" ng-click="playLetter($scope.letterArr[quizItem[$index]].nameUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
+            <input type="text" size="4" ng-model="answersheet.answer[$index]">
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
+                        <button type="submit" class="btn btn-primary" ng-click="evaluate()">Done</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+  
+<!--
+    <div class="well letter-item" ng-click="$scope.verifiedLetter = verifyLetter($index, letterSymbol)">           
+        <h2 ng-show="$scope.verifiedLetter">{{letter.symbol}}</h2>
+        <button type="submit" ng-hide="$scope.verifiedLetter" ng-click="playLetter(letter.nameUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
+        <input type="text" ng-hide="$scope.verifiedLetter" size="4" ng-model="letterSymbol">
+    </div>
+-->
+
+</div>

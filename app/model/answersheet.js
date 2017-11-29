@@ -5,6 +5,7 @@ RWTApp.factory("Answersheet", function(){
         this.quizId = plainObject.quizId;
         this.ordinal = plainObject.ordinal;
         this.score = plainObject.score;
+        this.answer = plainObject.answer;
     };
 
     return Answersheet;
