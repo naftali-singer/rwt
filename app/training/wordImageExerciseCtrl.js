@@ -1,4 +1,4 @@
-RWTApp.controller("WordExerciseCtrl", function ($scope, $http, $location, activeUser, Word, words) {
+RWTApp.controller("WordImageExerciseCtrl", function ($scope, $http, $location, activeUser, Word, words) {
     
         // If the user is not logged in going back to home screen
         if (!activeUser.isLoggedIn()) {

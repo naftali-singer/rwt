@@ -9,7 +9,7 @@
         <div class="well syllable-item" ng-click="$scope.verifiedSyllable = verifySyllable($index, syllableSymbol)">            
             <h2 ng-show="$scope.verifiedSyllable">{{syllable.symbol}}</h2>
             <button type="submit" ng-hide="$scope.verifiedSyllable" ng-click="playSyllable(syllable.soundUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
-            <input type="text" ng-hide="$scope.verifiedSyllable" size="6" ng-model="syllableSymbol">
+            <input type="text" ng-hide="$scope.verifiedSyllable" size="4" ng-model="syllableSymbol">
         </div>   
     </div>
     
