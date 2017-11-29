@@ -30,6 +30,10 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/training/syllableExercise.html",
             controller: "SyllableExerciseCtrl"
         })
+        .when("/letterexercises", {
+            templateUrl: "app/training/letterExercise.html",
+            controller: "LetterExerciseCtrl"
+        })
         .when("/quizzes", {
             templateUrl: "app/training/quizGallery.html",
             controller: "QuizGalleryCtrl"
