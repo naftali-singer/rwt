@@ -6,7 +6,7 @@
         "lastName" : "Channes",
         "role" : "teacher",
         "teacherId" : "00",
-        "quizId" : 0
+        "quizId" : "000"
     },
     {
         "userId" : "11",
@@ -15,7 +15,7 @@
         "lastName" : "Singer",
         "role" : "pupil",
         "teacherId" : "10",
-        "quizId" : 104
+        "quizId" : "104"
     },
     {
         "userId" : "12",
@@ -24,7 +24,7 @@
         "lastName" : "Dow",
         "role" : "pupil",
         "teacherId" : "10",
-        "quizId" : 0
+        "quizId" : "000"
     },
     {
         "userId" : "13",
@@ -33,6 +33,6 @@
         "lastName" : "Dow",
         "role" : "pupil",
         "teacherId" : "10",
-        "quizId" : 102
+        "quizId" : "102"
     }
 ]

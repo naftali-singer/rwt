@@ -2,11 +2,13 @@
     <button type="button" class="close" aria-label="Close" ng-click="dismiss()">
         <span aria-hidden="true">&times;</span>
     </button>
-    <h4 class="modal-title">Welcome Back!</h4>
+    <h4 class="modal-title"><span class="glyphicon glyphicon-star large-gliphicon"></span></h4>
 </div>
 <div class="modal-body">
     <div class="alert alert-danger" ng-show="failedAttempt">
-        Invalid email or password
+        <span class="glyphicon glyphicon-trash large-gliphicon"></span>..........
+        <span class="glyphicon glyphicon-erase large-gliphicon"></span>
+        <span class="glyphicon glyphicon-repeat large-gliphicon"></span>
     </div>
     
     <form class="form-horizontal">

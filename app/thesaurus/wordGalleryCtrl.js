@@ -1,10 +1,10 @@
 RWTApp.controller("WordGalleryCtrl", function ($scope, $http, $location, activeUser, Word, words) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn()) {
-            $location.path("/");
-            return;
-        }
+//        if (!activeUser.isLoggedIn()) {
+//            $location.path("/");
+//            return;
+//        }
     
 //        $scope.greetName = activeUser.get().firstName;
     

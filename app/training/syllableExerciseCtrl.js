@@ -1,10 +1,10 @@
 RWTApp.controller("SyllableExerciseCtrl", function ($scope, $http, $location, activeUser, syllables, Syllable) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn()) {
-            $location.path("/");
-            return;
-        }
+//        if (!activeUser.isLoggedIn()) {
+//            $location.path("/");
+//            return;
+//        }
     
 //        $scope.greetName = activeUser.get().firstName;
     
