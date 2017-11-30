@@ -2,7 +2,7 @@
 RWTApp.factory("Letter", function(){
     function Letter(plainObject) {
         this.symbol = plainObject.symbol;
-        this.nameUrl = plainObject.nameUrl;
+        this.soundUrl = plainObject.soundUrl;
     };
 
     return Letter;

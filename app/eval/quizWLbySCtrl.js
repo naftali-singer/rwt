@@ -1,4 +1,4 @@
-RWTApp.controller("WritingLetterBySoundQuizCtrl", function ($scope, $http, $location, activeUser, letters, Letter, quizzes, Answersheet, answersheets) {
+RWTApp.controller("QuizWLbySCtrl", function ($scope, $http, $location, activeUser, letters, Letter, quizzes, Answersheet, answersheets) {
     
         // If the user is not logged in going back to home screen
         if (!activeUser.isLoggedIn()) {

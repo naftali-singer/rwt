@@ -2,13 +2,13 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>Exercise Letters</h1>
+      <h1>Exercise Writing Letters by Sounds</h1>
     </div>
 
     <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ng-repeat="letter in letterArr" >
         <div class="well letter-item" ng-click="$scope.verifiedLetter = verifyLetter($index, letterSymbol)">           
             <h2 ng-show="$scope.verifiedLetter">{{letter.symbol}}</h2>
-            <button type="submit" ng-hide="$scope.verifiedLetter" ng-click="playLetter(letter.nameUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
+            <button type="submit" ng-hide="$scope.verifiedLetter" ng-click="playLetter(letter.soundUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button>
             <input type="text" ng-hide="$scope.verifiedLetter" size="4" ng-model="letterSymbol">
         </div>
     </div>    

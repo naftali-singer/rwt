@@ -1,4 +1,4 @@
-RWTApp.controller("UserGalleryCtrl", function ($scope, $http, $location, activeUser, User) {
+RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, activeUser, User) {
     
         // If the user is not logged in or not a teacher redirect home screen
         if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
@@ -7,17 +7,17 @@ RWTApp.controller("UserGalleryCtrl", function ($scope, $http, $location, activeU
         }
     
 //        $scope.greetName = activeUser.get().firstName;
-/*    
+
         // Making sure that we are only loading once
-        if (users.getAll().length === 0) {
-            $scope.userArr = [];
+        if (pupils.getAll().length === 0) {
+            $scope.pupilArr = [];
             $http.get("app/data/users.json").then(function(response) {
                 alert(JSON.stringify(response));
-                users.load(response.data);
-                $scope.wordArr = users.getAll();
+                pupils.load(response.data);
+                $scope.pupilArr = pupils.getAll();
             });
         } else {
-            $scope.userArr = users.getAll();
+            $scope.pupilArr = pupils.getAll();
         }
     
 //        $scope.openDetails = function(index) {
@@ -29,6 +29,5 @@ RWTApp.controller("UserGalleryCtrl", function ($scope, $http, $location, activeU
 //            audio.play();  
 //        }
 
-*/
 });
     

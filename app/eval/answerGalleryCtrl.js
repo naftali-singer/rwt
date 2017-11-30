@@ -1,7 +1,7 @@
-RWTApp.controller("AnswersheetGalleryCtrl", function ($scope, $http, $location, activeUser, Answersheet, answersheets) {
+RWTApp.controller("AnswerGalleryCtrl", function ($scope, $http, $location, activeUser, Answer, answers) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn()) {
+        if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
             $location.path("/");
             return;
         }
@@ -9,15 +9,15 @@ RWTApp.controller("AnswersheetGalleryCtrl", function ($scope, $http, $location, 
 //        $scope.greetName = activeUser.get().firstName;
     
         // Making sure that we are only loading once
-        if (answersheets.getAll().length === 0) {
-            $scope.answersheetArr = [];
-            $http.get("app/data/answersheets.json").then(function(response) {
+        if (answers.getAll().length === 0) {
+            $scope.answerArr = [];
+            $http.get("app/data/answers.json").then(function(response) {
                 alert(JSON.stringify(response));
-                answersheets.load(response.data);
-                $scope.answersheetArr = answersheets.getAll();
+                answers.load(response.data);
+                $scope.answerArr = answers.getAll();
             });
         } else {
-            $scope.answersheetArr = answersheets.getAll();
+            $scope.answerArr = answers.getAll();
         }
     
 //        $scope.openDetails = function(index) {
@@ -28,7 +28,6 @@ RWTApp.controller("AnswersheetGalleryCtrl", function ($scope, $http, $location, 
 //            var audio = new Audio(soundUrl);
 //            audio.play();  
 //        }
-
 
 });
     

@@ -35,10 +35,13 @@
 .quiz-item h4 {
     display: inline;
 }
-.answersheet-item {
+.answer-item {
     cursor: pointer;
 }
 
+.pupil-item {
+    cursor: pointer;
+}
 .large-gliphicon {
     font-size: 200%;
 }

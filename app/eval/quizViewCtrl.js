@@ -1,7 +1,7 @@
 RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $routeParams, Quiz, quizzes) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn()) {
+        if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
             $location.path("/");
             return;
         }

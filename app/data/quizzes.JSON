@@ -1,65 +1,58 @@
 [
     {
-        "quizId": 101,
+        "quizId": "101",
         "title": "grade c quarter-term",
         "skill" : "writing",
         "category" : "letter",
         "means" : "sound",
-        "quizItem" : "Aa",
-        "exposed": true
+        "questn" : ["Aa", "Cc", "Dd"]
     },
     {
-        "quizId": 102,
+        "quizId": "102",
         "title": "grade c mid-term",
         "skill" : "writing",
         "category" : "word",
         "means" : "sound",
-        "quizItem" : "banana",
-        "exposed": true
+        "questn" : ["banana", "avocado", "mango"]
     },
     {
-        "quizId": 103,
+        "quizId": "103",
         "title": "grade c term final",
         "skill" : "writing",
         "category" : "word",
         "means" : "image",
-        "quizItem" : "banana",
-        "exposed": true
+        "questn" : ["banana", "avocado", "mango"]
     },
     {
-        "quizId": 104,
+        "quizId": "104",
         "title": "grade d quarter-term",
         "skill" : "reading",
         "category" : "letter",
         "means" : "sound",
-        "quizItem" : "Aa",
-        "exposed": true
+        "questn" : ["Aa", "Cc", "Dd"]
     },
     {
-        "quizId": 105,
+        "quizId": "105",
         "title": "grade d mid-term",
         "skill" : "reading",
         "category" : "word",
         "means" : "sound",
-        "quizItem" : "banana",
-        "exposed": true
+        "questn" : ["banana", "avocado", "mango"]
     },
     {
-        "quizId": 106,
+        "quizId": "106",
         "title": "grade d term final",
         "skill" : "reading",
         "category" : "word",
         "means" : "image",
-        "quizItem" : "banana",
-        "exposed": true
+        "questn" : ["banana", "avocado", "mango"]
     },
     {
-        "quizId": 107,
+        "quizId": "107",
         "title": "knowledge level evaluation",
         "skill" : "reading",
         "category" : "word",
         "means" : "image",
-        "quizItem" : "avocado",
-        "exposed": true
+        "questn" : ["avocado", "banana", "mango"]
     }
 ]

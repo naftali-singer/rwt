@@ -1,0 +1,20 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Pupil Gallery</h1>
+    </div>
+    
+<!--    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="user in userArr filter | user.teacher === activeUser.get().userId" >  -->
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="pupil in pupilArr" >        
+        <div class="well pupil-item" ng-click="openDetails($index)">            
+            <p>{{pupil.userId}}</p>
+            <p>{{pupil.userPswd}}</p>
+            <p>{{pupil.firstName}}</p>
+            <p>{{pupil.lastName}}</p>
+            <p>{{pupil.quizId}}</p>
+<!--            <button ng-click="playWord(word.soundUrl)">Play Word</button> -->
+        </div>
+    </div>
+    
+</div>

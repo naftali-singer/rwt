@@ -1,0 +1,20 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Answersheet Gallery</h1>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="answer in answerArr" >
+        <div class="well answer-item" ng-click="openDetails($index)">        
+<!--            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">   -->
+            <h2>{{answer.userId}}</h2>
+            <p>{{answer.quizId}}</p>
+            <p>{{answer.ordinal}}</p>
+            <p>{{answer.score}}</p>
+            <p>{{answer.pupilAns}}</p>
+            <!--             <button ng-click="playWord(word.soundUrl)">Play Word</button>   -->
+        </div>
+    </div>
+    
+</div>

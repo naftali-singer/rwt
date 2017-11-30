@@ -4,62 +4,62 @@
         "quizId": 101,
         "ordinal": 1,
         "score": 67,
-        "answer" : "Bb"
+        "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
         "userId": 11,
         "quizId": 101,
         "ordinal": 2,
         "score": 97,
-        "answer" : "Aa"
+        "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
         "userId": 11,
         "quizId": 102,
         "ordinal": 1,
         "score": 85,
-        "answer" : "banana"
+        "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
         "userId": 11,
         "quizId": 103,
         "ordinal": 1,
         "score": 72,
-        "answer" : "mango"
+        "pupilAns" : ["mango", "avocado", "mango"]
     },
     {
         "userId": 11,
         "quizId": 103,
         "ordinal": 2,
         "score": 88,
-        "answer" : "banana"
+        "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
         "userId": 12,
         "quizId": 101,
         "ordinal": 1,
         "score": 92,
-        "answer" : "Aa"
+        "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
         "userId": 12,
         "quizId": 102,
         "ordinal": 1,
         "score": 89,
-        "answer" : "banana"
+        "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
         "userId": 12,
         "quizId": 103,
         "ordinal": 1,
         "score": 94,
-        "answer" : "banana"
+        "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
         "userId": 13,
         "quizId": 101,
         "ordinal": 1,
         "score": 70,
-        "answer" : "Aa"
+        "pupilAns" : ["Aa", "Cc", "Dd"]
     }
 ]

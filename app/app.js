@@ -6,49 +6,49 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/home/home.html",
             controller: "HomeCtrl"
         })
-        .when("/words", {
-            templateUrl: "app/thesaurus/wordGallery.html",
+        .when("/Words", {
+            templateUrl: "app/vocab/wordGallery.html",
             controller: "WordGalleryCtrl"
         })
-        .when("/syllables", {
-            templateUrl: "app/thesaurus/syllableGallery.html",
+        .when("/Syllables", {
+            templateUrl: "app/vocab/syllableGallery.html",
             controller: "SyllableGalleryCtrl"
         })
-        .when("/letters", {
-            templateUrl: "app/thesaurus/letterGallery.html",
+        .when("/Letters", {
+            templateUrl: "app/vocab/letterGallery.html",
             controller: "LetterGalleryCtrl"
         })
-        .when("/wordexercises", {
-            templateUrl: "app/training/wordExercise.html",
-            controller: "WordExerciseCtrl"
+        .when("/ExerWWbyS", {
+            templateUrl: "app/train/exerWWbyS.html",
+            controller: "ExerWWbySCtrl"
         })
-        .when("/wordimageexercises", {
-            templateUrl: "app/training/wordImageExercise.html",
-            controller: "WordImageExerciseCtrl"
+        .when("/ExerWWbyI", {
+            templateUrl: "app/train/exerWWbyI.html",
+            controller: "ExerWWbyICtrl"
         })
-        .when("/syllableexercises", {
-            templateUrl: "app/training/syllableExercise.html",
-            controller: "SyllableExerciseCtrl"
+        .when("/ExerWSbyS", {
+            templateUrl: "app/train/exerWSbyS.html",
+            controller: "ExerWSbySCtrl"
         })
-        .when("/letterexercises", {
-            templateUrl: "app/training/letterExercise.html",
-            controller: "LetterExerciseCtrl"
+        .when("/ExerWLbyS", {
+            templateUrl: "app/train/exerWLbyS.html",
+            controller: "ExerWLbySCtrl"
         })
-        .when("/quizzes", {
-            templateUrl: "app/training/quizGallery.html",
+        .when("/Quizzes", {
+            templateUrl: "app/eval/quizGallery.html",
             controller: "QuizGalleryCtrl"
         })
-        .when("/quizzes/:quizIndex", {
-            templateUrl: "app/training/quizView.html",
+        .when("/Quizzes/:quizIndex", {
+            templateUrl: "app/eval/quizView.html",
             controller: "QuizViewCtrl"
         })
-        .when("/progress", {
-            templateUrl: "app/training/answersheetGallery.html",
-            controller: "AnswersheetGalleryCtrl"
+        .when("/Progress", {
+            templateUrl: "app/eval/answerGallery.html",
+            controller: "AnswerGalleryCtrl"
         })
-        .when("/pupils", {
-            templateUrl: "app/evaluation/userGallery.html",
-            controller: "UserGalleryCtrl"
+        .when("/Pupils", {
+            templateUrl: "app/eval/pupilGallery.html",
+            controller: "PupilGalleryCtrl"
         })
 
 });

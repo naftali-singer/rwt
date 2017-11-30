@@ -1,4 +1,4 @@
-RWTApp.controller("WordGalleryCtrl", function ($scope, $http, $location, activeUser, Word, words) {
+RWTApp.controller("LetterGalleryCtrl", function ($scope, $http, $location, activeUser, letters, Letter) {
     
         // If the user is not logged in going back to home screen
 //        if (!activeUser.isLoggedIn()) {
@@ -9,26 +9,25 @@ RWTApp.controller("WordGalleryCtrl", function ($scope, $http, $location, activeU
 //        $scope.greetName = activeUser.get().firstName;
     
         // Making sure that we are only loading once
-        if (words.getAll().length === 0) {
-            $scope.wordArr = [];
-            $http.get("app/data/word.json").then(function(response) {
+        if (letters.getAll().length === 0) {
+            $scope.letterArr = [];
+            $http.get("app/data/letters.json").then(function(response) {
                 alert(JSON.stringify(response));
-                words.load(response.data);
-                $scope.wordArr = words.getAll();
+                letters.load(response.data);
+                $scope.letterArr = letters.getAll();
             });
         } else {
-            $scope.wordArr = words.getAll();
+            $scope.letterArr = letters.getAll();
         }
     
 //        $scope.openDetails = function(index) {
 //            $location.path("/recipes/" + index)
 //        }
 
-        $scope.playWord = function (soundUrl) {
+        $scope.playLetter = function (soundUrl) {
             var audio = new Audio(soundUrl);
             audio.play();  
         }
-
 
 });
     

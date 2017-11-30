@@ -9,7 +9,6 @@ RWTApp.factory("Syllable", function(){
 });
 
 
-
 RWTApp.factory("syllables", function(Syllable) {
     var syllableArr = [];
 

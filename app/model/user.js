@@ -8,7 +8,6 @@ RWTApp.factory("User", function(){
         this.role = plainObject.role;
         this.teacherId = plainObject.teacherId;
         this.quizId = plainObject.quizId;
-        
     };
 
     return User;

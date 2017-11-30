@@ -1,7 +1,7 @@
 RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeUser, Quiz, quizzes) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn()) {
+        if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
             $location.path("/");
             return;
         }
@@ -28,7 +28,6 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
 //            var audio = new Audio(soundUrl);
 //            audio.play();  
 //        }
-
 
 });
     

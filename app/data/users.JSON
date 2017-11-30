@@ -1,5 +1,14 @@
 [
     {
+        "userId" : "00",
+        "userPswd" : "100",
+        "firstName" : "Admin",
+        "lastName" : "Admin",
+        "role" : "teacher",
+        "teacherId" : "00",
+        "quizId" : "000"
+    },
+        {
         "userId" : "10",
         "userPswd" : "90",
         "firstName" : "Nir",
