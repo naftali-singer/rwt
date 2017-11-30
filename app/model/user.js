@@ -34,10 +34,19 @@ RWTApp.factory("activeUser", function(User){
         return user;
     };
 
+    var isTeacher = function() {
+        if (user.role === "teacher") {
+            return true;
+         } else {
+             return false;
+         }
+    };
+
     return {
         isLoggedIn : isLoggedIn,
         login : login,
         logout : logout,
-        get : get
+        get : get,
+        isTeacher : isTeacher
     };
 });

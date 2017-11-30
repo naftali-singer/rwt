@@ -46,6 +46,10 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/training/answersheetGallery.html",
             controller: "AnswersheetGalleryCtrl"
         })
+        .when("/pupils", {
+            templateUrl: "app/evaluation/userGallery.html",
+            controller: "UserGalleryCtrl"
+        })
 
 });
 

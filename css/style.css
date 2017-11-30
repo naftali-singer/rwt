@@ -42,3 +42,7 @@
 .large-gliphicon {
     font-size: 200%;
 }
+
+.user-item {
+    cursor: pointer;
+}

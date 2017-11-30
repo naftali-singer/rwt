@@ -34,5 +34,23 @@
         "role" : "pupil",
         "teacherId" : "10",
         "quizId" : "102"
+    },
+    {
+        "userId" : "20",
+        "userPswd" : "80",
+        "firstName" : "Not Nir",
+        "lastName" : "Not Channes",
+        "role" : "teacher",
+        "teacherId" : "00",
+        "quizId" : "000"
+    },
+    {
+        "userId" : "21",
+        "userPswd" : "87",
+        "firstName" : "Jane",
+        "lastName" : "Dow",
+        "role" : "pupil",
+        "teacherId" : "20",
+        "quizId" : "102"
     }
 ]

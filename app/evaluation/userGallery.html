@@ -1,0 +1,27 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>Evaluation Pupils</h1>
+    </div>
+
+    
+<!--    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="user in userArr filter | user.teacher === activeUser.get().userId" >  -->
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="user in userArr" >
+        
+        <div class="well user-item" ng-click="openDetails($index)">
+            
+            <p>{{user.userId}}</p>
+            <p>{{user.userPswd}}</p>
+            <p>{{user.firstName}}</p>
+            <p>{{user.lastName}}</p>
+            <p>{{user.role}}</p>
+            <p>{{user.quizId}}</p>
+<!--            <button ng-click="playWord(word.soundUrl)">Play Word</button> -->
+
+        </div>
+        
+    </div>
+    
+    
+</div>
