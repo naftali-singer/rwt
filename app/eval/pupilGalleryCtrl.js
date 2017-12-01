@@ -52,13 +52,18 @@ RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, active
         }
       }
       
-//      $scope.openCar = function (car) {
-        // Getting the index of the car in the array
-//        var carIndex = $scope.cars.indexOf(car);
-
+      $scope.dispPupilForm = function () {
         // Updating the URL
-//        $location.path("/cars/" + carIndex)
-//      }
+        $location.path("/Pupils/form")
+      }
+
+      $scope.dispPupilView = function (pupil) {
+        // Getting the index of the pupil in the array
+        alert(JSON.stringify($scope.pupilArr));
+        var pupilIndex = $scope.pupilArr.indexOf(pupil);
+        // Updating the URL
+        $location.path("/Pupils/" + pupilIndex)
+      }
 
 
 

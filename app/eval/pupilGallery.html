@@ -2,9 +2,8 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>{{greetName}}'s Pupils Gallery</h1>
+      <h1>{{greetName}}'s Pupil Gallery</h1>
     </div>
-
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
 <!--
@@ -19,10 +18,11 @@
     </div>
 -->
         <div class="pull-left">
-            <span class="glyphicon glyphicon-filter large-gliphicon"></span>
-            <input type="text" size="4" ng-model="queryPropty">
+            <button type="button" class="btn btn-default" ng-click="dispPupilForm()"><span class="glyphicon glyphicon-plus large-gliphicon"></span></button>
         </div>
         <div class="pull-right">
+            <span class="glyphicon glyphicon-filter large-gliphicon"></span>
+            <input type="text" size="4" ng-model="queryPropty">
             <span class="glyphicon glyphicon-sort-by-attributes large-gliphicon"></span>
             <select ng-model="orderPropty">
                 <option value=""></option>
@@ -30,6 +30,7 @@
                 <option value="lastName">Last Name</option>
             </select>
         </div>
+        <br>
         <br>
         <br>
     <table class="table">
@@ -40,7 +41,7 @@
             <th>Password</th>
             <th>Quiz ID</th>
         </tr>
-        <tr ng-repeat="pupil in pupilArr | filter : queryByName | orderBy: orderPropty" ng-dblclick="dispPupilView(pupil)" ng-class="{'red-selected': pupil.selected}">
+        <tr ng-repeat="pupil in pupilArr | filter : queryByName | orderBy: orderPropty" ng-click="dispPupilView(pupil)">
             <td>{{pupil.userId}}</td>
             <td>{{pupil.lastName}}</td>
             <td>{{pupil.firstName}}</td>
@@ -49,8 +50,7 @@
         </tr>
     </table>
 
-    <button type="button" class="btn btn-default" ng-click="addPupil()">Add Pupil</button>
-
+<!--
     <div class="col-sm-offset-2 col-sm-10">
         <div class="pull-right">
             <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
@@ -58,7 +58,7 @@
             <button type="submit" class="btn btn-danger" ng-click="remove()">Delete</button>
         </div>
     </div>
-
+-->
 
 
 </div>

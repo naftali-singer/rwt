@@ -50,6 +50,14 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/eval/pupilGallery.html",
             controller: "PupilGalleryCtrl"
         })
+        .when("/Pupils/:pupilIndex", {
+            templateUrl: "app/eval/pupilView.html",
+            controller: "PupilViewCtrl"
+        })
+        .when("/Pupils/form", {
+            templateUrl: "app/eval/pupilForm.html",
+            controller: "PupilFormCtrl"
+        })
 
 });
 
