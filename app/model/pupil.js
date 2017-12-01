@@ -8,7 +8,7 @@ RWTApp.factory("Pupil", function(){
         this.quizId = plainObject.quizId;
     };
 
-    return User;
+    return Pupil;
 });
 
 // Service that manges the pupils of a teacher

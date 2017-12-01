@@ -2,19 +2,63 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>Pupil Gallery</h1>
+      <h1>{{greetName}}'s Pupils Gallery</h1>
     </div>
-    
-<!--    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="user in userArr filter | user.teacher === activeUser.get().userId" >  -->
-    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="pupil in pupilArr" >        
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
+<!--
         <div class="well pupil-item" ng-click="openDetails($index)">            
             <p>{{pupil.userId}}</p>
             <p>{{pupil.userPswd}}</p>
             <p>{{pupil.firstName}}</p>
             <p>{{pupil.lastName}}</p>
             <p>{{pupil.quizId}}</p>
-<!--            <button ng-click="playWord(word.soundUrl)">Play Word</button> -->
+            <button ng-click="playWord(word.soundUrl)">Play Word</button> 
         </div>
     </div>
-    
+-->
+        <div class="pull-left">
+            <span class="glyphicon glyphicon-filter large-gliphicon"></span>
+            <input type="text" size="4" ng-model="queryPropty">
+        </div>
+        <div class="pull-right">
+            <span class="glyphicon glyphicon-sort-by-attributes large-gliphicon"></span>
+            <select ng-model="orderPropty">
+                <option value=""></option>
+                <option value="userId">User ID</option>
+                <option value="lastName">Last Name</option>
+            </select>
+        </div>
+        <br>
+        <br>
+    <table class="table">
+        <tr>
+            <th ng-click="sortBy('userId')">User ID</th>
+            <th ng-click="sortBy('lastName')">Last Name</th>
+            <th>First Name</th>
+            <th>Password</th>
+            <th>Quiz ID</th>
+        </tr>
+        <tr ng-repeat="pupil in pupilArr | filter : queryByName | orderBy: orderPropty" ng-dblclick="dispPupilView(pupil)" ng-class="{'red-selected': pupil.selected}">
+            <td>{{pupil.userId}}</td>
+            <td>{{pupil.lastName}}</td>
+            <td>{{pupil.firstName}}</td>
+            <td>{{pupil.userPswd}}</td>
+            <td>{{pupil.quizId}}</td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-default" ng-click="addPupil()">Add Pupil</button>
+
+    <div class="col-sm-offset-2 col-sm-10">
+        <div class="pull-right">
+            <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
+            <button type="submit" class="btn btn-primary" ng-click="update()">Update</button>
+            <button type="submit" class="btn btn-danger" ng-click="remove()">Delete</button>
+        </div>
+    </div>
+
+
+
 </div>
