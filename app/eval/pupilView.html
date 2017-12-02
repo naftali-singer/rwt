@@ -31,27 +31,19 @@
             <input type="text" class="form-control" id="quizId" placeholder="Enter" ng-model="pupil.quizId">
           </div>
         </div>
-<!-- virtual input to complete the user object of which pupil is a decendent
-        <input type="hidden" name="country" value="Norway">
-        <input type="hidden" name="country" value="Norway">
-        <input type="hidden" name="country" value="Norway">
--->
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <div class="pull-right">
-              <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
-              <button type="submit" class="btn btn-primary" ng-click="update()">Update</button>
-              <button type="submit" class="btn btn-danger" ng-click="remove()">Delete</button>
+            <div class="pull-left">
+              <button type="submit" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-list-alt large-gliphicon"></span></button>
+            </div>
+            <div class="pull-right">              
+              <button type="submit" class="btn btn-primary" ng-click="update()"><span class="glyphicon glyphicon-edit large-gliphicon"></span></button>
+              <button type="submit" class="btn btn-danger" ng-click="remove()"><span class="glyphicon glyphicon-minus large-gliphicon"></span></button>
             </div>
           </div>
         </div>
       </form>
     </div>
     
-<!--    
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <img ng-src="{{recipe.imageUrl}}" class="img-responsive block-center" alt="Image">
-    </div>
--->
-
 </div>
+  
