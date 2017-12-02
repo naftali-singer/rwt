@@ -5,7 +5,8 @@
       <h1>Quiz Gallery</h1>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="quiz in quizArr" >
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<!--
         <div class="well quiz-item" ng-click="dispQuizView($index)">
             <h4>{{quiz.quizId}}</h4>
             <h4>{{quiz.title}}</h4>
@@ -14,6 +15,40 @@
             <h4>{{quiz.means}}</h4>
             <h4>{{quiz.questn}}</h4>
         </div>
+-->
+        <div class="pull-left">
+            <button type="button" class="btn btn-default" ng-click="dispQuizForm()"><span class="glyphicon glyphicon-plus large-gliphicon"></span></button>
+        </div>
+        <div class="pull-right">
+            <span class="glyphicon glyphicon-filter large-gliphicon"></span>
+            <input type="text" size="4" ng-model="queryPropty">
+            <span class="glyphicon glyphicon-sort-by-attributes large-gliphicon"></span>
+            <select ng-model="orderPropty">
+                <option value=""></option>
+                <option value="quizId">Quiz ID</option>
+                <option value="title">Title</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <table class="table">
+            <tr>
+                <th ng-click="sortBy('quizId')">Quiz ID</th>
+                <th ng-click="sortBy('title')">Title</th>
+                <th>Skill</th>
+                <th>Category</th>
+                <th>Means</th>
+                <th>Questions</th>
+            </tr>
+            <tr ng-repeat="quiz in quizArr | filter : queryByTitle | orderBy: orderPropty" ng-click="dispQuizView(quiz)">
+                <td>{{quiz.quizId}}</td>
+                <td>{{quiz.title}}</td>
+                <td>{{quiz.skill}}</td>
+                <td>{{quiz.category}}</td>
+                <td>{{quiz.means}}</td>
+                <td>{{quiz.questn}}</td>
+            </tr>
+        </table>
     </div>
-       
 </div>

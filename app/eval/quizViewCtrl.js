@@ -1,6 +1,6 @@
 RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $routeParams, Quiz, quizzes) {
     
-        // If the user is not logged in going back to home screen
+        // If the user is not logged in or not a teacher redirect home screen
         if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
             $location.path("/");
             return;
@@ -10,18 +10,19 @@ RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $rou
         $scope.quiz = new Quiz(quizzes.get($routeParams.quizIndex));
     
         $scope.cancel = function() {
-            $location.path("/quizzes");
+            $location.path("/Quizzes");
         }
-    
+        // no update or deletion of a quiz
+/*
         $scope.update = function() {
             quizzes.update($routeParams.quizIndex, $scope.quiz);
-            $location.path("/quizzes");
+            $location.path("/Quizzes");
         }
     
         $scope.remove = function() {
             quizzes.remove($routeParams.quizIndex);
-            $location.path("/quizzes");
+            $location.path("/Quizzes");
         }
-        
+*/        
     })
     

@@ -66,7 +66,5 @@ RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, active
       }
 
 
-
-
 });
     
