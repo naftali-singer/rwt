@@ -24,5 +24,14 @@ RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $rou
             $location.path("/Quizzes");
         }
 */        
-    })
+        $scope.assignPupilsOfTeacher = function (teacherId, quizId) {
+            var pupilsOfTeacher = [];
+            pupilsOfTeacher = pupils.getByTeacher(teacherId);
+            for (var i = 0; i < pupilsOfTeacher.length; i++) {
+                pupilsOfTeacher[i].pupil.quizId = quizId;
+                pupils.update(i, pupilsOfTeacher[i]);
+            }
+        }
+
+})
     

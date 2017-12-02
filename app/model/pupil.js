@@ -45,6 +45,16 @@ RWTApp.factory("pupils", function(Pupil){
         pupilArr = [];
     }
 
+    var getByTeacher = function(userId) {
+        var pupilsOfTeacher = [];
+        for (var i = 0; i < pupilArr.length; i++) {
+            if (pupilArr[i].teacherId === userId) {
+                pupilOfTeacher.push(pupilArr[i]);
+            }
+        }
+        return pupilsOfTeacher;
+    }
+
     return {
         add: add,
         update: update,
@@ -52,6 +62,7 @@ RWTApp.factory("pupils", function(Pupil){
         load: load,
         getAll: getAll,
         get: get,
-        removeAll: removeAll
+        removeAll: removeAll,
+        getByTeacher : getByTeacher
     };
 });
