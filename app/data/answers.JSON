@@ -1,65 +1,65 @@
 [
     {
-        "userId": 11,
-        "quizId": 101,
-        "ordinal": 1,
-        "score": 67,
+        "userId": "11",
+        "quizId": "101",
+        "ordinal": "1",
+        "score": "67",
         "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
-        "userId": 11,
-        "quizId": 101,
-        "ordinal": 2,
-        "score": 97,
+        "userId": "11",
+        "quizId": "101",
+        "ordinal": "2",
+        "score": "97",
         "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
-        "userId": 11,
-        "quizId": 102,
-        "ordinal": 1,
-        "score": 85,
+        "userId": "11",
+        "quizId": "102",
+        "ordinal": "1",
+        "score": "85",
         "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
-        "userId": 11,
-        "quizId": 103,
-        "ordinal": 1,
-        "score": 72,
+        "userId": "11",
+        "quizId": "103",
+        "ordinal": "1",
+        "score": "72",
         "pupilAns" : ["mango", "avocado", "mango"]
     },
     {
-        "userId": 11,
-        "quizId": 103,
-        "ordinal": 2,
-        "score": 88,
+        "userId": "11",
+        "quizId": "103",
+        "ordinal": "2",
+        "score": "88",
         "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
-        "userId": 12,
-        "quizId": 101,
-        "ordinal": 1,
-        "score": 92,
+        "userId": "12",
+        "quizId": "101",
+        "ordinal": "1",
+        "score": "92",
         "pupilAns" : ["Aa", "Cc", "Dd"]
     },
     {
-        "userId": 12,
-        "quizId": 102,
-        "ordinal": 1,
-        "score": 89,
+        "userId": "12",
+        "quizId": "102",
+        "ordinal": "1",
+        "score": "89",
         "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
-        "userId": 12,
-        "quizId": 103,
-        "ordinal": 1,
-        "score": 94,
+        "userId": "12",
+        "quizId": "103",
+        "ordinal": "1",
+        "score": "94",
         "pupilAns" : ["banana", "avocado", "mango"]
     },
     {
-        "userId": 13,
-        "quizId": 101,
-        "ordinal": 1,
-        "score": 70,
+        "userId": "13",
+        "quizId": "101",
+        "ordinal": "1",
+        "score": "70",
         "pupilAns" : ["Aa", "Cc", "Dd"]
     }
 ]

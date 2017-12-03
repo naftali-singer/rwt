@@ -46,6 +46,15 @@ RWTApp.factory("quizzes", function(Quiz) {
         quizArr = [];
     }
 
+    var getQuizByQuizId = function(quizId) {
+        for (var i = 0; i < quizArr.length; i++) {
+            if (quizArr[i].quizId === quizId) {
+                return quizArr[i];
+            }
+        }
+        return null;
+    }
+
     return {
         add: add,
         update: update,
@@ -53,6 +62,7 @@ RWTApp.factory("quizzes", function(Quiz) {
         load: load,
         getAll: getAll,
         get: get,
-        removeAll: removeAll
+        removeAll: removeAll,
+        getQuizByQuizId : getQuizByQuizId
     }
 })

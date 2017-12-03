@@ -41,11 +41,21 @@ RWTApp.factory("activeUser", function(User){
          }
     };
 
+    var isPupil = function() {
+        if (user.role === "pupil") {
+            return true;
+         } else {
+             return false;
+         }
+    };
+
+
     return {
         isLoggedIn : isLoggedIn,
         login : login,
         logout : logout,
         get : get,
-        isTeacher : isTeacher
+        isTeacher : isTeacher,
+        isPupil : isPupil
     };
 });

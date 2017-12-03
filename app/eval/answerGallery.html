@@ -2,19 +2,57 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>Answersheet Gallery</h1>
+      <h1>{{greetName}}'s Progress</h1>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="answer in answerArr" >
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<!--
         <div class="well answer-item" ng-click="openDetails($index)">        
-<!--            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">   -->
+            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">   
             <h2>{{answer.userId}}</h2>
             <p>{{answer.quizId}}</p>
             <p>{{answer.ordinal}}</p>
             <p>{{answer.score}}</p>
             <p>{{answer.pupilAns}}</p>
-            <!--             <button ng-click="playWord(word.soundUrl)">Play Word</button>   -->
+                         <button ng-click="playWord(word.soundUrl)">Play Word</button>   
         </div>
+-->
+<!--
+        <div class="pull-left">
+            <button type="button" class="btn btn-default" ng-click="dispPupilForm()"><span class="glyphicon glyphicon-plus large-gliphicon"></span></button>
+        </div>
+-->
+        <div class="pull-right">
+            <span class="glyphicon glyphicon-filter large-gliphicon"></span>
+            <input type="text" size="4" ng-model="queryPropty">
+            <span class="glyphicon glyphicon-sort-by-attributes large-gliphicon"></span>
+            <select ng-model="orderPropty">
+                <option value=""></option>
+                <option value="quizId">Quiz ID</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <table class="table">
+        <tr>
+            <th ng-click="sortBy('quizId')">Quiz ID</th>
+            <th>Quiz Title</th>
+            <th>Ordinal</th>
+            <th>Score</th>
+            <th>Answers</th>
+        </tr>
+        <tr ng-repeat="answer in answerArr | filter : queryByQuizId | orderBy: orderPropty" ng-click="dispAnswerView(answer)">
+            <td>{{answer.quizId}}</td>
+            <td>{{dispQuizTitle(answer.quizId)}}</td>
+            <td>{{answer.ordinal}}</td>
+            <td>{{answer.score}}</td>
+            <td>{{answer.pupilAns}}</td>
+        </tr>
+        </table>
+
+
     </div>
     
 </div>
+
