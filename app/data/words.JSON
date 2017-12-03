@@ -2,16 +2,25 @@
     {
         "symbol": "banana",
         "soundUrl" : "app/asset/banana.mp3",
-        "imageUrl" : "app/asset/banana.jpg"
+        "imageUrl" : "app/asset/banana.jpg",
+        "sylls" : ["ba", "na", "na"]
     },
     {
         "symbol": "avocado",
         "soundUrl" : "app/asset/avocado.mp3",
-        "imageUrl" : "app/asset/avocado.jpg"
+        "imageUrl" : "app/asset/avocado.jpg",
+        "sylls" : ["a", "vo", "ca", "do"]        
     },
     {
         "symbol": "mango",
         "soundUrl" : "app/asset/mango.mp3",
-        "imageUrl" : "app/asset/mango.jpg"
+        "imageUrl" : "app/asset/mango.jpg",
+        "sylls" : ["ma", "n", "go"]        
+    },
+    {
+        "symbol": "banana",
+        "soundUrl" : "app/asset/banana.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ba", "na", "na"]        
     }
 ]

@@ -2,14 +2,16 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>Exercise Writing Words by Images</h1>
+        <h1>
+            <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
+            <span class="glyphicon glyphicon-picture large-gliphicon"></span>
+        </h1>
     </div>
     
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="word in wordArr" >
-        <div class="well word-item" ng-click="$scope.verifiedWord = verifyWord($index, wordSymbol)">
-            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">
+        <div class="well word-item" ng-hide="notImagedWord($index)" ng-click="$scope.verifiedWord = verifyWord($index, wordSymbol)">
+            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="">
             <input type="text" ng-hide="$scope.verifiedWord" size="12" ng-model="wordSymbol">
-<!--            <button type="submit" ng-hide="$scope.verifiedWord" ng-click="playWord(word.soundUrl)"><span class="glyphicon glyphicon-music large-gliphicon"></span></button> -->
             <h2 ng-show="$scope.verifiedWord">{{word.symbol}}</h2>
         </div>
     </div>

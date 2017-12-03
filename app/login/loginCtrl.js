@@ -5,7 +5,7 @@ RWTApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loca
         for (var i = 0; i < response.data.length; i++) {
             $scope.users.push(new User(response.data[i]));
         }
-        alert(JSON.stringify($scope.users));
+//        alert(JSON.stringify($scope.users));
     });
 
     $scope.failedAttempt = false;

@@ -2,22 +2,15 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>Vocabulary Words</h1>
+      <h1><span class="glyphicon glyphicon-tree-conifer large-gliphicon"></span></h1>
     </div>
 
-    
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="word in wordArr" >
-        
-        <div class="well word-item" ng-click="openDetails($index)">
-            
-            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="Image">
+        <div class="well word-item" ng-click="playWord(word.soundUrl)">
+            <img ng-src="{{word.imageUrl}}" class="img-responsive" alt="">
             <h2>{{word.symbol}}</h2>
-            <p>{{word.soundUrl}}</p>
-            <button ng-click="playWord(word.soundUrl)">Play Word</button>
-
-        </div>
-        
+            <h2>{{editSylls(word.sylls)}}</h2>
+        </div>        
     </div>
-    
     
 </div>

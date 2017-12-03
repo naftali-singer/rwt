@@ -4,6 +4,7 @@ RWTApp.factory("Word", function(){
         this.symbol = plainObject.symbol;
         this.soundUrl = plainObject.soundUrl;
         this.imageUrl = plainObject.imageUrl;
+        this.sylls = plainObject.sylls;
     };
 
     return Word;

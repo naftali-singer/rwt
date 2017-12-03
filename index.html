@@ -46,14 +46,13 @@
     <script src="app/eval/pupilViewCtrl.js"></script>
     <script src="app/eval/pupilFormCtrl.js"></script>
     <script src="app/eval/quizWLbySCtrl.js"></script>    
-    <!--    <script src="app/recipe/recipeDetailsCtrl.js"></script>   -->
-<!--    <script src="app/recipe/newRecipeCtrl.js"></script>   -->
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body ng-controller="TestCtrl">
-    
+<!--  <body ng-controller="TestCtrl"> -->
+<body>
+                
     <nav class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -69,20 +68,32 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#!/Words">Words</a></li>
-                <li><a href="#!/Syllables">Syllables</a></li>
-                <li><a href="#!/Letters">Letters</a></li>
-                <li><a href="#!/ExerWWbyS">ExerWWbyS</a></li>
-                <li><a href="#!/ExerWWbyI">ExerWWbyI</a></li>
-                <li><a href="#!/ExerWSbyS">ExerWSbyS</a></li>
-                <li><a href="#!/ExerWLbyS">ExerWLbyS</a></li>
+                <li><a href="#!/Letters"><span class="glyphicon glyphicon-leaf large-gliphicon"></span></a></li>
+                <li><a href="#!/Syllables"><span class="glyphicon glyphicon-grain large-gliphicon"></span></a></li>
+                <li><a href="#!/Words"><span class="glyphicon glyphicon-tree-conifer large-gliphicon"></span></a></li>
+                <li><a href="#!/ExerWLbyS">
+                    <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
+                    <span class="glyphicon glyphicon-leaf large-gliphicon"></span>
+                </a></li>
+                <li><a href="#!/ExerWSbyS">
+                    <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
+                    <span class="glyphicon glyphicon-grain large-gliphicon"></span>
+                </a></li>
+                <li><a href="#!/ExerWWbyS">
+                    <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
+                    <span class="glyphicon glyphicon-tree-conifer large-gliphicon"></span>
+                </a></li>
+                <li><a href="#!/ExerWWbyI">
+                    <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
+                    <span class="glyphicon glyphicon-picture large-gliphicon"></span>
+                </a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/Quizzes">Quizzes</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/Progress">Progress</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/Pupils">Pupils</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-hide="isLoggedIn()"><a href="#">Login</a></li>
-                <li ng-show="isLoggedIn()"><a href="#">Logout</a></li>
+                <li ng-hide="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-user large-gliphicon"></span></a></li>
+                <li ng-show="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-off large-gliphicon"></span></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
