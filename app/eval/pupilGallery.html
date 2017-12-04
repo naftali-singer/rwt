@@ -6,19 +6,10 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
-<!--
-        <div class="well pupil-item" ng-click="openDetails($index)">            
-            <p>{{pupil.userId}}</p>
-            <p>{{pupil.userPswd}}</p>
-            <p>{{pupil.firstName}}</p>
-            <p>{{pupil.lastName}}</p>
-            <p>{{pupil.quizId}}</p>
-            <button ng-click="playWord(word.soundUrl)">Play Word</button> 
-        </div>
-    </div>
--->
         <div class="pull-left">
             <button type="button" class="btn btn-default" ng-click="dispPupilForm()"><span class="glyphicon glyphicon-plus large-gliphicon"></span></button>
+            <button type="button" class="btn btn-default" ng-click="chngPupilsQuizId()"><span class="glyphicon glyphicon-edit large-gliphicon"></span></button>
+            Quiz Id:<input type="text" size="8" ng-model="chngQuizId">
         </div>
         <div class="pull-right">
             <span class="glyphicon glyphicon-filter large-gliphicon"></span>
@@ -33,32 +24,21 @@
         <br>
         <br>
         <br>
-    <table class="table">
-        <tr>
-            <th ng-click="sortBy('userId')">User ID</th>
-            <th ng-click="sortBy('lastName')">Last Name</th>
-            <th>First Name</th>
-            <th>Password</th>
-            <th>Quiz ID</th>
-        </tr>
-        <tr ng-repeat="pupil in pupilArr | filter : queryByName | orderBy: orderPropty" ng-click="dispPupilView(pupil)">
-            <td>{{pupil.userId}}</td>
-            <td>{{pupil.lastName}}</td>
-            <td>{{pupil.firstName}}</td>
-            <td>{{pupil.userPswd}}</td>
-            <td>{{pupil.quizId}}</td>
-        </tr>
-    </table>
-
-<!--
-    <div class="col-sm-offset-2 col-sm-10">
-        <div class="pull-right">
-            <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
-            <button type="submit" class="btn btn-primary" ng-click="update()">Update</button>
-            <button type="submit" class="btn btn-danger" ng-click="remove()">Delete</button>
-        </div>
-    </div>
--->
-
+        <table class="table">
+            <tr>
+                <th ng-click="sortBy('userId')">User ID</th>
+                <th ng-click="sortBy('lastName')">Last Name</th>
+                <th>First Name</th>
+                <th>Password</th>
+                <th>Quiz ID</th>
+            </tr>
+            <tr ng-repeat="pupil in pupilArr | filter : queryByName | orderBy: orderPropty" ng-click="dispPupilView(pupil)">
+                <td>{{pupil.userId}}</td>
+                <td>{{pupil.lastName}}</td>
+                <td>{{pupil.firstName}}</td>
+                <td>{{pupil.userPswd}}</td>
+                <td>{{pupil.quizId}}</td>
+            </tr>
+        </table>
 
 </div>

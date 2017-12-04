@@ -1,6 +1,6 @@
 RWTApp.controller("PupilViewCtrl", function ($scope, $location, activeUser,  $routeParams, Pupil, pupils) {
     
-        // If the user is not logged in going back to home screen
+        // If the user is not logged in or not a teacher redirect home screen
         if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
             $location.path("/");
             return;

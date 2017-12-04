@@ -1,38 +1,29 @@
 RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, activeUser, User, pupils, Pupil) {
     
-        // If the user is not logged in or not a teacher redirect home screen
-        if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
-            $location.path("/");
-            return;
-        }
+      // If the user is not logged in or not a teacher redirect home screen
+      if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
+          $location.path("/");
+          return;
+      }
     
-        $scope.greetName = activeUser.get().firstName;
+      $scope.greetName = activeUser.get().firstName;
 
-        // Making sure that we are only loading once
-        if (pupils.getAll().length === 0) {
-            $scope.pupilArr = [];
-            $http.get("app/data/users.json").then(function(response) {
-                alert(JSON.stringify(response));
-                for (var i = 0; i < response.data.length; i++) {
-                    if (response.data[i].teacherId === activeUser.get().userId) {
-                        pupils.add(new Pupil(response.data[i]));
-                    }
-                }
-                $scope.pupilArr = pupils.getAll();
-            });
-        } else {
-            $scope.pupilArr = pupils.getAll();
-        }
+      // Making sure that we are only loading once
+      if (pupils.getAll().length === 0) {
+          $scope.pupilArr = [];
+          $http.get("app/data/users.json").then(function(response) {
+//              alert(JSON.stringify(response));
+              for (var i = 0; i < response.data.length; i++) {
+                  if (response.data[i].teacherId === activeUser.get().userId) {
+                      pupils.add(new Pupil(response.data[i]));
+                  }
+              }
+              $scope.pupilArr = pupils.getAll();
+          });
+      } else {
+          $scope.pupilArr = pupils.getAll();
+      }
     
-//        $scope.openDetails = function(index) {
-//            $location.path("/recipes/" + index)
-//        }
-
-//        $scope.playWord = function (soundUrl) {
-//            var audio = new Audio(soundUrl);
-//            audio.play();  
-//        }
-
       $scope.sortBy = function(propty) {
         $scope.orderPropty = propty;
       }
@@ -65,6 +56,11 @@ RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, active
         $location.path("/Pupils/" + pupilIndex)
       }
 
+      $scope.chngPupilsQuizId = function (pupil) {
+        for (var i = 0; i < $scope.pupilArr.length; i++) {
+          $scope.pupilArr[i].quizId = $scope.chngQuizId;
+        }
+      }
 
 });
     
