@@ -23,16 +23,17 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
         }
         
         // Custom query function
-        $scope.queryByTitle = function(quiz) {
+        $scope.queryByQuizIdTitle = function(quiz) {
             if ($scope.queryPropty === undefined || $scope.queryPropty === "") {
-            return true;
+                return true;
             }
             var queryProptyLowerCase = $scope.queryPropty.toLowerCase();
+            var quizId = quiz.quizId.toLowerCase();
             var title = quiz.title.toLowerCase();
-            if (title.includes(queryProptyLowerCase)) {
-            return true;
+            if (quizId.includes(queryProptyLowerCase) || title.includes(queryProptyLowerCase)) {
+                return true;
             } else {
-            return false;
+                return false;
             }
         }
 

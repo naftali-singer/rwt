@@ -1,4 +1,7 @@
-var RWTApp = angular.module("RWTApp", ["ngRoute", "ngAnimate", "ui.bootstrap"]);
+var RWTApp = angular.module("RWTApp", ["ngRoute", "ngAnimate", "ui.bootstrap"])
+.run(function($rootScope) {
+    $rootScope.pupilsOfTeacher = [];
+});
 
 RWTApp.config(function ($routeProvider) {
     $routeProvider
@@ -62,9 +65,13 @@ RWTApp.config(function ($routeProvider) {
             templateUrl: "app/eval/quizView.html",
             controller: "QuizViewCtrl"
         })
-        .when("/Progress", {
+        .when("/ProgressTeacher", {
             templateUrl: "app/eval/answerGallery.html",
             controller: "AnswerGalleryCtrl"
+        })
+        .when("/ProgressPupil", {
+            templateUrl: "app/eval/answerView.html",
+            controller: "AnswerViewCtrl"
         })
         .when("/login", {
             templateUrl: "app/login/login.html",

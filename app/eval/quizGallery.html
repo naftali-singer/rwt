@@ -31,7 +31,7 @@
                 <th>Means</th>
                 <th>Questions</th>
             </tr>
-            <tr ng-repeat="quiz in quizArr | filter : queryByTitle | orderBy: orderPropty" ng-click="dispQuizView(quiz)">
+            <tr ng-repeat="quiz in quizArr | filter : queryByQuizIdTitle | orderBy: orderPropty" ng-click="dispQuizView(quiz)">
                 <td>{{quiz.quizId}}</td>
                 <td>{{quiz.title}}</td>
                 <td>{{quiz.skill}}</td>

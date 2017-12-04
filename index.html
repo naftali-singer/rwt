@@ -38,13 +38,14 @@
     <script src="app/train/exerWwbyICtrl.js"></script>
     <script src="app/train/exerWSbySCtrl.js"></script>
     <script src="app/train/exerWLbySCtrl.js"></script>
+    <script src="app/eval/pupilGalleryCtrl.js"></script>
+    <script src="app/eval/pupilViewCtrl.js"></script>
+    <script src="app/eval/pupilFormCtrl.js"></script>
     <script src="app/eval/quizGalleryCtrl.js"></script>
     <script src="app/eval/quizViewCtrl.js"></script>
     <script src="app/eval/quizFormCtrl.js"></script>
     <script src="app/eval/answerGalleryCtrl.js"></script>
-    <script src="app/eval/pupilGalleryCtrl.js"></script>
-    <script src="app/eval/pupilViewCtrl.js"></script>
-    <script src="app/eval/pupilFormCtrl.js"></script>
+    <script src="app/eval/answerViewCtrl.js"></script>
     <script src="app/eval/quizWLbySCtrl.js"></script>    
     <link href="css/style.css" rel="stylesheet">
 
@@ -87,11 +88,12 @@
                     <span class="glyphicon glyphicon-pencil large-gliphicon"></span>
                     <span class="glyphicon glyphicon-picture large-gliphicon"></span>
                 </a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/Quizzes">Quizzes</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/Progress">Progress</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/Pupils">Pupils</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li ng-show="isLoggedIn()"><a href="#!/Pupils">Pupils</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Quizzes">Quizzes</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/ProgressTeacher">ProgressT</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/ProgressPupil">ProgressP</a></li>
                 <li ng-hide="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-user large-gliphicon"></span></a></li>
                 <li ng-show="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-off large-gliphicon"></span></a></li>
             </ul>

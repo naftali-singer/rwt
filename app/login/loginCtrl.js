@@ -1,4 +1,4 @@
-RWTApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
+RWTApp.controller("LoginCtrl", function ($scope, $rootScope, $uibModalInstance, $http, $location, activeUser, User) {
 
     $http.get("app/data/users.json").then(function (response) {
         $scope.users = [];
@@ -14,10 +14,21 @@ RWTApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loca
         var user = getLoggedInUser();
         if (user != null) {
             activeUser.login(user);
+// alert(JSON.stringify(activeUser.get()));
+            if (activeUser.isTeacher()) {
+                for (var i = 0; i < $scope.users.length; i++) {
+                    if ($scope.users[i].role === "pupil" && $scope.users[i].teacherId === activeUser.get().userId) {
+                        $rootScope.pupilsOfTeacher[i] = $scope.users[i].userId;
+                    }
+                }                        
+// alert(JSON.stringify($rootScope.pupilsOfTeacher));
+            }
             $uibModalInstance.close("Logged-in");
-            $location.path("/progress");
-            if (user.role === "pupil" && user.quizId !== "000") {
-                $location.path("/quizzes");
+            if (activeUser.isTeacher()) {
+                $location.path("/ProgressTeacher")                            
+            }
+            if (activeUser.isPupil()) {
+                $location.path("/ProgressPupil")                            
             }
         } else {
             $scope.failedAttempt = true;
