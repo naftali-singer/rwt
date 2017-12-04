@@ -5,7 +5,7 @@
         "skill" : "writing",
         "category" : "letter",
         "means" : "sound",
-        "questn" : ["Aa", "Cc", "Dd"]
+        "questn" : "Aa Cc Dd"
     },
     {
         "quizId": "102",
@@ -13,7 +13,7 @@
         "skill" : "writing",
         "category" : "word",
         "means" : "sound",
-        "questn" : ["banana", "avocado", "mango"]
+        "questn" : "banana avocado mango"
     },
     {
         "quizId": "103",
@@ -21,7 +21,7 @@
         "skill" : "writing",
         "category" : "word",
         "means" : "image",
-        "questn" : ["banana", "avocado", "mango"]
+        "questn" : "banana avocado mango"
     },
     {
         "quizId": "104",
@@ -29,7 +29,7 @@
         "skill" : "reading",
         "category" : "letter",
         "means" : "sound",
-        "questn" : ["Aa", "Cc", "Dd"]
+        "questn" : "Aa Cc Dd"
     },
     {
         "quizId": "105",
@@ -37,7 +37,7 @@
         "skill" : "reading",
         "category" : "word",
         "means" : "sound",
-        "questn" : ["banana", "avocado", "mango"]
+        "questn" : "banana avocado mango"
     },
     {
         "quizId": "106",
@@ -45,7 +45,7 @@
         "skill" : "reading",
         "category" : "word",
         "means" : "image",
-        "questn" : ["banana", "avocado", "mango"]
+        "questn" : "banana avocado mango"
     },
     {
         "quizId": "107",
@@ -53,6 +53,6 @@
         "skill" : "reading",
         "category" : "word",
         "means" : "image",
-        "questn" : ["avocado", "banana", "mango"]
+        "questn" : "avocado banana mango"
     }
 ]

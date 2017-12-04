@@ -33,5 +33,13 @@ RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $rou
             }
         }
 
+        $scope.editQuestn = function (questn) {
+            var editedQuestn = "";
+            for (var i = 0; i < questn.length; i++) {
+                editedQuestn = editedQuestn + " " + questn[i];
+            }
+            return editedQuestn;
+        }
+
 })
     

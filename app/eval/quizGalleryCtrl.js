@@ -56,6 +56,13 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
             $location.path("/Quizzes/" + quizIndex)
         }
 
+        $scope.editQuestn = function (questn) {
+            var editedQuestn = "";
+            for (var i = 0; i < questn.length; i++) {
+                editedQuestn = editedQuestn + " " + questn[i];
+            }
+            return editedQuestn;
+        }
 
 });
     

@@ -37,6 +37,12 @@
             <input type="text" class="form-control" id="means" placeholder="Enter" ng-model="quiz.means">
           </div>
         </div>
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="questn">Questions:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="questn" placeholder="Enter (blank separated)" ng-model="quiz.questn">
+          </div>
+        </div>
 <!-- virtual input to complete the user object of which pupil is a descendant - if a server were to be updated
         <input type="hidden" name="user.role" value="pupil">
         <input type="hidden" name="user.teacherId" value="activeUser.get().userId">
