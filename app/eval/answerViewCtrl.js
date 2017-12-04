@@ -1,7 +1,7 @@
 RWTApp.controller("AnswerGalleryCtrl", function ($scope, $http, $location, activeUser, Answer, answers, quizzes) {
     
         // If the user is not logged in going back to home screen
-        if (!activeUser.isLoggedIn() || !activeUser.isTeacher()) {
+        if (!activeUser.isLoggedIn() || !activeUser.isPupil()) {
             $location.path("/");
             return;
         }

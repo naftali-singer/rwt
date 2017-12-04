@@ -2,7 +2,7 @@
 <div class="container">
     
     <div class="page-header">
-      <h1>{{greetName}}'s Pupils Progress</h1>
+      <h1>{{greetName}}'s Progress</h1>
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -36,9 +36,6 @@
         <br>
         <table class="table">
         <tr>
-            <th ng-click="sortBy('userId')">User ID</th>
-            <th>Last Name</th>
-            <th>First Name</th>
             <th ng-click="sortBy('quizId')">Quiz ID</th>
             <th>Quiz Title</th>
             <th>Ordinal</th>
@@ -46,9 +43,6 @@
             <th>Answers</th>
         </tr>
         <tr ng-repeat="answer in answerArr | filter : queryByQuizId | orderBy: orderPropty" ng-click="dispAnswerView(answer)">
-            <td>{{answer.userId}}</td>
-            <td>{{answer.userId}}</td>
-            <td>{{answer.userId}}</td>
             <td>{{answer.quizId}}</td>
             <td>{{dispQuizTitle(answer.quizId)}}</td>
             <td>{{answer.ordinal}}</td>
