@@ -12,7 +12,8 @@ RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $rou
         $scope.cancel = function() {
             $location.path("/Quizzes");
         }
-        // no update or deletion of a quiz
+        
+// no update or deletion of a quiz
 /*
         $scope.update = function() {
             quizzes.update($routeParams.quizIndex, $scope.quiz);
@@ -24,22 +25,6 @@ RWTApp.controller("QuizViewCtrl", function ($scope, $location, activeUser,  $rou
             $location.path("/Quizzes");
         }
 */        
-        $scope.assignPupilsOfTeacher = function (teacherId, quizId) {
-            var pupilsOfTeacher = [];
-            pupilsOfTeacher = pupils.getByTeacher(teacherId);
-            for (var i = 0; i < pupilsOfTeacher.length; i++) {
-                pupilsOfTeacher[i].pupil.quizId = quizId;
-                pupils.update(i, pupilsOfTeacher[i]);
-            }
-        }
-
-        $scope.editQuestn = function (questn) {
-            var editedQuestn = "";
-            for (var i = 0; i < questn.length; i++) {
-                editedQuestn = editedQuestn + " " + questn[i];
-            }
-            return editedQuestn;
-        }
 
 })
     

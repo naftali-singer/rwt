@@ -7,13 +7,18 @@ RWTApp.controller("QuizFormCtrl", function ($scope, $location, activeUser, Quiz,
         }
     
         $scope.quiz = new Quiz({});
-//        $scope.editedQuestn = "ba na na";
     
         $scope.cancel = function () {
             $location.path("/Quizzes");
         }
     
         $scope.create = function () {
+            quizzes.add($scope.quiz);
+            $location.path("/Quizzes");
+        }
+
+    });
+
 //            alert($scope.editedQuestn);
 //            var editedQuestnArr = [];
 //            editedQuestnArr = $scope.editedQuestn.split(" ");
@@ -27,8 +32,3 @@ RWTApp.controller("QuizFormCtrl", function ($scope, $location, activeUser, Quiz,
 //            $scope.quiz.questn = $scope.quiz.questn + '"' + editedQuestnArr[i] + '"]';
 //            alert($scope.quiz.questn);
 //            alert(JSON.stringify($scope.quiz));
-            quizzes.add($scope.quiz);
-            $location.path("/Quizzes");
-        }
-
-    });
