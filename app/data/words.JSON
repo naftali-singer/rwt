@@ -6,6 +6,78 @@
         "sylls" : ["ba", "na", "na"]
     },
     {
+        "symbol": "duck",
+        "soundUrl" : "app/asset/duck.mp3",
+        "imageUrl" : "app/asset/duck.jpg",
+        "sylls" : ["du", "ck"]
+    },
+    {
+        "symbol": "boots",
+        "soundUrl" : "app/asset/boots.mp3",
+        "imageUrl" : "app/asset/boots.jpg",
+        "sylls" : ["boo", "t", "s"]
+    },
+    {
+        "symbol": "bus",
+        "soundUrl" : "app/asset/bus.mp3",
+        "imageUrl" : "app/asset/bus.jpg",
+        "sylls" : ["bu", "s"]
+    },
+    {
+        "symbol": "zebra",
+        "soundUrl" : "app/asset/zebra.mp3",
+        "imageUrl" : "app/asset/zebra.jpg",
+        "sylls" : ["ze", "b", "ra"]
+    },
+    {
+        "symbol": "bear",
+        "soundUrl" : "app/asset/bear.mp3",
+        "imageUrl" : "app/asset/bear.jpg",
+        "sylls" : ["bea", "r"]
+    },
+    {
+        "symbol": "cat",
+        "soundUrl" : "app/asset/cat.mp3",
+        "imageUrl" : "app/asset/cat.jpg",
+        "sylls" : ["ca", "t"]
+    },
+    {
+        "symbol": "dog",
+        "soundUrl" : "app/asset/dog.mp3",
+        "imageUrl" : "app/asset/dog.jpg",
+        "sylls" : ["do", "g"]
+    },
+    {
+        "symbol": "elephant",
+        "soundUrl" : "app/asset/elephant.mp3",
+        "imageUrl" : "app/asset/elephant.jpg",
+        "sylls" : ["e", "le", "pha", "n", "t"]
+    },
+    {
+        "symbol": "apricot",
+        "soundUrl" : "app/asset/apricot.mp3",
+        "imageUrl" : "app/asset/apricot.jpg",
+        "sylls" : ["a", "p", "ri", "co", "t"]
+    },
+    {
+        "symbol": "tomato",
+        "soundUrl" : "app/asset/tomato.mp3",
+        "imageUrl" : "app/asset/tomato.jpg",
+        "sylls" : ["to", "ma", "to"]
+    },
+    {
+        "symbol": "apple",
+        "soundUrl" : "app/asset/apple.mp3",
+        "imageUrl" : "app/asset/apple.jpg",
+        "sylls" : ["a", "pp", "le"]
+    },
+    {
+        "symbol": "cow",
+        "soundUrl" : "app/asset/cow.mp3",
+        "imageUrl" : "app/asset/cow.jpg",
+        "sylls" : ["co", "w"]
+    },
+    {
         "symbol": "avocado",
         "soundUrl" : "app/asset/avocado.mp3",
         "imageUrl" : "app/asset/avocado.jpg",
@@ -18,9 +90,111 @@
         "sylls" : ["ma", "n", "go"]        
     },
     {
-        "symbol": "banana",
-        "soundUrl" : "app/asset/banana.mp3",
+        "symbol": "ambulance",
+        "soundUrl" : "app/asset/ambulance.mp3",
         "imageUrl" : "",
-        "sylls" : ["ba", "na", "na"]        
+        "sylls" : ["a", "m", "bu", "la", "n", "ce"]
+    },
+    {
+        "symbol": "america",
+        "soundUrl" : "app/asset/america.mp3",
+        "imageUrl" : "",
+        "sylls" : ["a", "me", "ri", "ca"]
+    },
+    {
+        "symbol": "beach",
+        "soundUrl" : "app/asset/beach.mp3",
+        "imageUrl" : "",
+        "sylls" : ["bea", "ch"]
+    },
+    {
+        "symbol": "big",
+        "soundUrl" : "app/asset/big.mp3",
+        "imageUrl" : "",
+        "sylls" : ["bi", "g"]
+    },
+    {
+        "symbol": "bird",
+        "soundUrl" : "app/asset/bird.mp3",
+        "imageUrl" : "",
+        "sylls" : ["bi", "r", "d"]
+    },
+    {
+        "symbol": "boy",
+        "soundUrl" : "app/asset/boy.mp3",
+        "imageUrl" : "",
+        "sylls" : ["bo", "y"]
+    },
+    {
+        "symbol": "bring",
+        "soundUrl" : "app/asset/bring.mp3",
+        "imageUrl" : "",
+        "sylls" : ["b", "ri", "n", "g"]
+    },
+    {
+        "symbol": "canada",
+        "soundUrl" : "app/asset/canada.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ca", "na", "da"]
+    },
+    {
+        "symbol": "candy",
+        "soundUrl" : "app/asset/candy.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ca", "n", "dy"]
+    },
+    {
+        "symbol": "car",
+        "soundUrl" : "app/asset/car.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ca", "r"]
+    },
+    {
+        "symbol": "card",
+        "soundUrl" : "app/asset/card.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ca", "r", "d"]
+    },
+    {
+        "symbol": "crocodile",
+        "soundUrl" : "app/asset/crocodile.mp3",
+        "imageUrl" : "",
+        "sylls" : ["c", "ro", "co", "di", "le"]
+    },
+    {
+        "symbol": "email",
+        "soundUrl" : "app/asset/email.mp3",
+        "imageUrl" : "",
+        "sylls" : ["e", "mai", "l"]
+    },
+    {
+        "symbol": "belt",
+        "soundUrl" : "app/asset/belt.mp3",
+        "imageUrl" : "",
+        "sylls" : ["be", "l", "t"]        
+    },
+    {
+        "symbol": "fish",
+        "soundUrl" : "app/asset/fish.mp3",
+        "imageUrl" : "",
+        "sylls" : ["fi", "sh"]        
+    },
+    {
+        "symbol": "taxi",
+        "soundUrl" : "app/asset/taxi.mp3",
+        "imageUrl" : "",
+        "sylls" : ["ta", "xi"]        
+    },
+    {
+        "symbol": "telephone",
+        "soundUrl" : "app/asset/telephone.mp3",
+        "imageUrl" : "",
+        "sylls" : ["te", "le", "pho", "ne"]        
+    },
+    {
+        "symbol": "wolf",
+        "soundUrl" : "app/asset/wolf.mp3",
+        "imageUrl" : "",
+        "sylls" : ["wo", "l", "f"]        
     }
 ]
