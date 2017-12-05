@@ -18,17 +18,3 @@ RWTApp.controller("QuizFormCtrl", function ($scope, $location, activeUser, Quiz,
         }
 
     });
-
-//            alert($scope.editedQuestn);
-//            var editedQuestnArr = [];
-//            editedQuestnArr = $scope.editedQuestn.split(" ");
-//            alert(editedQuestnArr);
-//            $scope.quiz.questn = "[";
-//            for (var i = 0; i < editedQuestnArr.length - 1 ; i++) {
-//                $scope.quiz.questn[i] = editedQuestnArr[i];
-//                $scope.quiz.questn = $scope.quiz.questn + '"' + editedQuestnArr[i] + '",';
-//                alert($scope.quiz.questn);
-//            }
-//            $scope.quiz.questn = $scope.quiz.questn + '"' + editedQuestnArr[i] + '"]';
-//            alert($scope.quiz.questn);
-//            alert(JSON.stringify($scope.quiz));

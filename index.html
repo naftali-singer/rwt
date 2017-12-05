@@ -31,6 +31,7 @@
     <script src="app/model/quiz.js"></script>
     <script src="app/model/answer.js"></script>
     <script src="app/model/pupil.js"></script>
+    <script src="app/model/pupilquiz.js"></script>    
     <script src="app/vocab/wordGalleryCtrl.js"></script>
     <script src="app/vocab/syllableGalleryCtrl.js"></script>
     <script src="app/vocab/letterGalleryCtrl.js"></script>
@@ -46,12 +47,11 @@
     <script src="app/eval/quizFormCtrl.js"></script>
     <script src="app/eval/answerGalleryCtrl.js"></script>
     <script src="app/eval/answerViewCtrl.js"></script>
-    <script src="app/eval/quizWLbySCtrl.js"></script>    
+    <script src="app/eval/pupilQuizCtrl.js"></script>    
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<!--  <body ng-controller="TestCtrl"> -->
 <body>
                 
     <nav class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
@@ -90,6 +90,7 @@
                 </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li ng-show="isLoggedIn()"><a href="#!/PupilQuiz">Take Quiz</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/Pupils">Pupils</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/Quizzes">Quizzes</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/ProgressTeacher">ProgressT</a></li>

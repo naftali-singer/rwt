@@ -42,6 +42,9 @@
 .pupil-item {
     cursor: pointer;
 }
+.pupilquiz-item {
+    cursor: pointer;
+}
 .large-gliphicon {
     font-size: 200%;
 }
