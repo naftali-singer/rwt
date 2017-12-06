@@ -10,7 +10,7 @@ RWTApp.config(function ($routeProvider) {
             controller: "HomeCtrl"
         })
         .when("/Letters", {
-            templateUrl: "vocab/letterGallery.html",
+            templateUrl: "app/vocab/letterGallery.html",
             controller: "LetterGalleryCtrl"
         })
         .when("/Syllables", {
