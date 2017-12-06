@@ -43,16 +43,16 @@
     },
     {
         "questnNo": "7",
-        "symbol": "cat",
-        "soundUrl" : "app/asset/cat.mp3",
-        "imageUrl" : "app/asset/cat.jpg",
+        "symbol": "dog",
+        "soundUrl" : "app/asset/dog.mp3",
+        "imageUrl" : "app/asset/dog.jpg",
         "pupilAns" : " "
     },
     {
         "questnNo": "8",
-        "symbol": "dog",
-        "soundUrl" : "app/asset/dog.mp3",
-        "imageUrl" : "app/asset/dog.jpg",
+        "symbol": "cat",
+        "soundUrl" : "app/asset/cat.mp3",
+        "imageUrl" : "app/asset/cat.jpg",
         "pupilAns" : " "
     },
     {
