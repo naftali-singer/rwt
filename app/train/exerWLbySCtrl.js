@@ -3,7 +3,7 @@ RWTApp.controller("ExerWLbySCtrl", function ($scope, $http, $location, activeUse
         // Making sure that we load only once
         if (letters.getAll().length === 0) {
             $scope.letterArr = [];
-            $http.get("app/data/letters.json").then(function(response) {
+            $http.get("app/data/letters.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 letters.load(response.data);
                 $scope.letterArr = letters.getAll();

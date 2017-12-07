@@ -9,7 +9,7 @@ RWTApp.controller("QuizGalleryCtrl", function ($scope, $http, $location, activeU
         // Making sure that we are only loading once
         if (quizzes.getAll().length === 0) {
             $scope.quizArr = [];
-            $http.get("app/data/quizzes.json").then(function(response) {
+            $http.get("app/data/quizzes.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 quizzes.load(response.data);
                 $scope.quizArr = quizzes.getAll();

@@ -50,7 +50,7 @@ RWTApp.controller("PupilGalleryCtrl", function ($scope, $http, $location, active
 
       $scope.dispPupilView = function (pupil) {
         // Getting the index of the pupil in the array
-        alert(JSON.stringify($scope.pupilArr));
+//        alert(JSON.stringify($scope.pupilArr));
         var pupilIndex = $scope.pupilArr.indexOf(pupil);
         // Updating the URL
         $location.path("/Pupils/" + pupilIndex)

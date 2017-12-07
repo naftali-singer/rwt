@@ -11,7 +11,7 @@ RWTApp.controller("PupilQuizCtrl", function ($scope, $http, $location, activeUse
         // Making sure that we are only loading once
         if (pupilQuizzes.getAll().length === 0) {
             $scope.pupilQuizArr = [];
-            $http.get("app/data/pupilquiz.json").then(function(response) {
+            $http.get("app/data/pupilquiz.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 pupilQuizzes.load(response.data);
                 $scope.pupilQuizArr = pupilQuizzes.getAll();

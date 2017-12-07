@@ -3,7 +3,7 @@ RWTApp.controller("WordGalleryCtrl", function ($scope, $http, $location, activeU
         // Making sure that we load only once
         if (words.getAll().length === 0) {
             $scope.wordArr = [];
-            $http.get("app/data/words.json").then(function(response) {
+            $http.get("app/data/words.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 words.load(response.data);
                 $scope.wordArr = words.getAll();

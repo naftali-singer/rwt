@@ -34,7 +34,7 @@ RWTApp.factory("activeUser", function(User){
     };
 
     var isTeacher = function() {
-        if (user.role === "teacher") {
+        if (user && user.role === "teacher") {
             return true;
          } else {
              return false;
@@ -42,7 +42,7 @@ RWTApp.factory("activeUser", function(User){
     };
 
     var isPupil = function() {
-        if (user.role === "pupil") {
+        if (user && user.role === "pupil") {
             return true;
          } else {
              return false;

@@ -3,8 +3,8 @@ RWTApp.controller("ExerWWbySCtrl", function ($scope, $http, $location, activeUse
         // Making sure that we load only once
         if (words.getAll().length === 0) {
             $scope.wordArr = [];
-            $http.get("app/data/words.json").then(function(response) {
-                alert(JSON.stringify(response));
+            $http.get("app/data/words.JSON").then(function(response) {
+//                alert(JSON.stringify(response));
                 words.load(response.data);
                 $scope.wordArr = words.getAll();
             });

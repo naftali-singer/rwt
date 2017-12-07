@@ -90,11 +90,11 @@
                 </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-show="isLoggedIn()"><a href="#!/PupilQuiz">Take Quiz</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/Pupils">Pupils</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/Quizzes">Quizzes</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/ProgressTeacher">ProgressT</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/ProgressPupil">ProgressP</a></li>
+                <li ng-show="isPupil()"><a href="#!/PupilQuiz">Take Quiz</a></li>
+                <li ng-show="isTeacher()"><a href="#!/Pupils">Pupils</a></li>
+                <li ng-show="isTeacher()"><a href="#!/Quizzes">Quizzes</a></li>
+                <li ng-show="isTeacher()"><a href="#!/ProgressTeacher">ProgressT</a></li>
+                <li ng-show="isPupil()"><a href="#!/ProgressPupil">ProgressP</a></li>
                 <li ng-hide="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-user large-gliphicon"></span></a></li>
                 <li ng-show="isLoggedIn()"><a href="#"><span class="glyphicon glyphicon-off large-gliphicon"></span></a></li>
             </ul>

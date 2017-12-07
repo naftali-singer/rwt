@@ -11,7 +11,7 @@ RWTApp.controller("AnswerViewCtrl", function ($scope, $http, $location, activeUs
         // Making sure that we are only loading once
         if (answers.getAll().length === 0) {
             $scope.answerArr = [];
-            $http.get("app/data/answers.json").then(function(response) {
+            $http.get("app/data/answers.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 for (var i = 0; i < response.data.length; i++) {
                     if (response.data[i].userId === activeUser.get().userId) {

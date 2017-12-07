@@ -3,7 +3,7 @@ RWTApp.controller("SyllableGalleryCtrl", function ($scope, $http, $location, act
         // Making sure that we load only once
         if (syllables.getAll().length === 0) {
             $scope.syllableArr = [];
-            $http.get("app/data/syllables.json").then(function(response) {
+            $http.get("app/data/syllables.JSON").then(function(response) {
 //                alert(JSON.stringify(response));
                 syllables.load(response.data);
                 $scope.syllableArr = syllables.getAll();

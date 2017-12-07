@@ -14,7 +14,9 @@
 .word-item {
     cursor: pointer;
 }
-
+.word-item img {
+    height: 300px;
+}
 .syllable-item {
     cursor: pointer;
 }
