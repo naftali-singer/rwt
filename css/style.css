@@ -47,6 +47,9 @@
 .pupilquiz-item {
     cursor: pointer;
 }
+.pupilquiz-item img {
+    height: 150px;
+}
 .large-gliphicon {
     font-size: 200%;
 }
